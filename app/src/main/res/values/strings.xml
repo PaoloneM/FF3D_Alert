@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FF3D Alert</string>
+
+    <string name="hello_world">Welcome to FF3D Alert App</string>
+    <string name="action_settings">Settings</string>
+    <string name="button1">Press to register device</string>
+
+</resources>
