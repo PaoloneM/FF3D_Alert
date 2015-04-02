@@ -31,9 +31,6 @@ public class GcmIntentService extends IntentService {
     // Notification ID to allow for future updates
     private static final int MY_NOTIFICATION_ID = 1;
 
-    // Notification Count
-    private int mNotificationCount;
-
     // Notification Text Elements
     private final CharSequence tickerText = "FF3D Alert Ticker";
     private final CharSequence contentTitle = "New FF3D ALert";
@@ -43,9 +40,6 @@ public class GcmIntentService extends IntentService {
     private PendingIntent mContentIntent;
 
     // Notification Sound and Vibration on Arrival
-    private Uri soundURI = Uri
-            .parse("android.resource://course.examples.Notification.StatusBar/"
-                    + R.raw.alarm_rooster);
     private long[] mVibratePattern = { 0, 200, 200, 300 };
 
 
@@ -70,16 +64,7 @@ public class GcmIntentService extends IntentService {
         GcmBroadcastReceiver.completeWakefulIntent(intent);
     }
 
-    protected void showToast(final String message) {
-        new Handler(Looper.getMainLooper()).post(new Runnable() {
-            @Override
-            public void run() {
-                Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
-            }
-        });
-    }
-
-    protected void showNotification(final String message){
+   protected void showNotification(final String message){
 
 
         mNotificationIntent = new Intent(Intent.ACTION_VIEW,

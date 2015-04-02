@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FF3D Alert Backend/FF3D Alert Backend.iml" filepath="$PROJECT_DIR$/FF3D Alert Backend/FF3D Alert Backend.iml" />
-      <module fileurl="file://$PROJECT_DIR$/FF3DAlert.iml" filepath="$PROJECT_DIR$/FF3DAlert.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FF3D_Alert.iml" filepath="$PROJECT_DIR$/FF3D_Alert.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
